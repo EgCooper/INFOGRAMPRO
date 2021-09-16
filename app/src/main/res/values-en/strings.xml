@@ -6,4 +6,10 @@
     <string name="button_text">LOGIN</string>
     <string name="no_tienes_una_cuenta">" ¿Do you don't have an account?, "</string>
     <string name="crea_una_aqu">Create one Here</string>
+    <string name="correo">correo</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Correo">Correo</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Confirme_Contraseña">Confirme_Contraseña</string>
+    <string name="button_text_Create_Account">UNETE</string>
 </resources>

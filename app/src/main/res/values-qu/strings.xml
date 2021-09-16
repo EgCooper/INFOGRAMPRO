@@ -6,4 +6,10 @@
     <string name="button_text">Yaykuy</string>
     <string name="no_tienes_una_cuenta">" ¿No tienes una Cuenta?, "</string>
     <string name="crea_una_aqu">Crea Una Aquì</string>
+    <string name="correo">correo</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Correo">Correo</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Confirme_Contraseña">Confirme_Contraseña</string>
+    <string name="button_text_Create_Account">UNETE</string>
 </resources>
