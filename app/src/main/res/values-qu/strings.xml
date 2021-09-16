@@ -4,4 +4,6 @@
     <string name="nombre_de_usuario">Suti</string>
     <string name="contraseña">Sullaw</string>
     <string name="button_text">Yaykuy</string>
+    <string name="no_tienes_una_cuenta">" ¿No tienes una Cuenta?, "</string>
+    <string name="crea_una_aqu">Crea Una Aquì</string>
 </resources>

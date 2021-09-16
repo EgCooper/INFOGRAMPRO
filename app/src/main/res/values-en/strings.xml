@@ -4,4 +4,6 @@
     <string name="nombre_de_usuario">Name</string>
     <string name="contraseña">Password</string>
     <string name="button_text">LOGIN</string>
+    <string name="no_tienes_una_cuenta">" ¿Do you don't have an account?, "</string>
+    <string name="crea_una_aqu">Create one Here</string>
 </resources>
