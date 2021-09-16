@@ -2,13 +2,23 @@ package com.example.infogram.view.fragment;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.example.infogram.R;
+import com.example.infogram.adapter.CardViewAdapter;
+import com.example.infogram.adapter.CardViewAdapter;
+import com.example.infogram.model.Image;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +71,33 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view= inflater.inflate(R.layout.fragment_home,container,false);
+        showToolbar(getString(R.string.title_home_fragment),false,view);
+
+        //RecyclerView recyclerView=view.findViewById(R.id.recycler_view);
+
+        //LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext());
+       // linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        //recyclerView.setLayoutManager(linearLayoutManager);
+        //CardViewAdapter cardviewAdapter=new CardViewAdapter(buidImages(),R.layout.cardview_image,getActivity());
+        //recyclerView.setAdapter(cardviewAdapter);
+        return view;
+
+    }
+    public void showToolbar(String titulo,boolean botonSubir, View view){
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(titulo);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(botonSubir);
+    }
+    public ArrayList<Image>buidImages(){
+        ArrayList<Image> images = new ArrayList<>();
+        images.add(new Image("","Carlos","1","2"));
+        images.add(new Image("","Victor","2","5"));
+        images.add(new Image("","Andres","4","10"));
+        images.add(new Image("","Carla","3","20"));
+        System.out.println(images);
+
+        return images;
     }
 }
