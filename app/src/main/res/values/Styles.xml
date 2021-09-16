@@ -7,6 +7,8 @@
 
 
     </style>
+    <style name="Apptheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+    <style name="Apptheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
     <style name="EditTextWhite" parent="Theme.AppCompat.Light">
         <item name="android:textSize">@dimen/editText_textSize</item>
         <item name="android:textColorHint">@color/editTextColorwhite</item>
