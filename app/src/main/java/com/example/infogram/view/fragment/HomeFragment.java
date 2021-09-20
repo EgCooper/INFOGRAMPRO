@@ -74,13 +74,13 @@ public class HomeFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_home,container,false);
         showToolbar(getString(R.string.title_home_fragment),false,view);
 
-        //RecyclerView recyclerView=view.findViewById(R.id.recycler_view);
+        RecyclerView recyclerView=view.findViewById(R.id.recycler_view);
 
-        //LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext());
-       // linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        //recyclerView.setLayoutManager(linearLayoutManager);
-        //CardViewAdapter cardviewAdapter=new CardViewAdapter(buidImages(),R.layout.cardview_image,getActivity());
-        //recyclerView.setAdapter(cardviewAdapter);
+        LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext());
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        CardViewAdapter cardviewAdapter=new CardViewAdapter(buidImages(),R.layout.cardview_image,getActivity());
+        recyclerView.setAdapter(cardviewAdapter);
         return view;
 
     }
