@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.infogram">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InfoGram">
+
         <activity
             android:name=".view.ContainerActivity"
             android:exported="true" />
@@ -31,6 +32,16 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".LoginActivity" />
+        <activity
+            android:name=".view.ImageDetailActivity"
+            android:exported="true"
+            android:parentActivityName=".view.ContainerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ContainerActivity" />
+        </activity>
+
     </application>
+
 
 </manifest>
