@@ -92,10 +92,10 @@ public class HomeFragment extends Fragment {
     }
     public ArrayList<Image>buidImages(){
         ArrayList<Image> images = new ArrayList<>();
-        images.add(new Image("","Carlos","1","2"));
-        images.add(new Image("","Victor","2","5"));
-        images.add(new Image("","Andres","4","10"));
-        images.add(new Image("","Carla","3","20"));
+        images.add(new Image("https://images.wallpaperscraft.com/image/single/fox_stick_autumn_221120_1280x720.jpg","Carlos","1","2"));
+        images.add(new Image("https://images.wallpaperscraft.com/image/single/fox_stick_autumn_221120_1280x720.jpg","Victor","2","5"));
+        images.add(new Image("https://images.wallpaperscraft.com/image/single/fox_stick_autumn_221120_1280x720.jpg","Andres","4","10"));
+        images.add(new Image("https://images.wallpaperscraft.com/image/single/fox_stick_autumn_221120_1280x720.jpg","Carla","3","20"));
         System.out.println(images);
 
         return images;
